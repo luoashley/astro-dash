@@ -151,3 +151,139 @@ body {
   padding: 3rem;
   color: var(--text-muted);
 }
+
+/* Layout configurations for charts grid */
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-box {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.chart-box h4 {
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* Detail view structural card styling */
+.detail-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 700px;
+}
+
+.back-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.spec-item {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.site-link {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-link:hover {
+  text-decoration: underline;
+}
+
+.details-btn {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.details-btn:hover {
+  text-decoration: underline;
+}
+
+/* Story block styles */
+.data-story-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.data-story-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #f3f4f6;
+}
+.data-story-card p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+.tip-box {
+  margin: 1rem 0 0 0;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #10b981;
+  border-radius: 4px;
+  font-style: normal;
+  color: #e5e7eb;
+}
+
+/* Visualization Toggle Button Elements */
+.visualization-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.control-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.toggle-btn {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-muted);
+}
+.toggle-btn.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+}
